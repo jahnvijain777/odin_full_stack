@@ -3,40 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Collection</title>
+    <meta name="description" content="A collection of simple, comforting recipes.">
+    <title>Odin Recipes</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Recipe Collection</h1>
-        <p>Discover a variety of delicious recipes, from comforting classics to exciting new meals. Choose a recipe below to get started.</p>
-        <hr>
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn" type="button">Recipes</button>
-                <div class="dropdown-content">
-                    <a href="Pancake.html">Pancake</a>
-                    <a href="Sambhar Dosa.html">Sambhar Dosa</a>
-                    <a href="Lasagna.html">Lasagna</a>
-                    <a href="Pasta.html">Pasta</a>
-                    <a href="Pizza.html">Pizza</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1>Odin Recipes </h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1>Delicious recipes for everyone</h1>
+                    <p>Discover comforting classics and exciting new meals. Choose a recipe below and get cooking.</p>
+                    <a class="button" href="#recipes">Explore recipes</a>
+                </div>
+                <div class="hero-image" role="img" aria-label="Fresh ingredients prepared for cooking"></div>
+            </div>
+        </section>
+
+        <section class="call-to-action" id="sign-up">
+            <div class="container cta-inner">
+                <div><h2>Ready to start cooking?</h2><p>Pick a recipe and make something delicious today.</p></div>
+            </div>
+        </section>
+        <section class="information" id="recipes">
+            <div class="container">
+                <h2>Explore our recipes.</h2>
+                <div class="recipe-cards">
+                    <a class="recipe-card" href="#pancakes">
+                        <span class="card-image card-image-one"></span>
+                        <span>Fluffy pancakes</span>
+                    </a>
+                    <a class="recipe-card" href="#dosa">
+                        <span class="card-image card-image-two"></span>
+                        <span>Sambhar dosa</span>
+                    </a>
+                    <a class="recipe-card" href="#lasagna">
+                        <span class="card-image card-image-three"></span>
+                        <span>Classic lasagna</span>
+                    </a>
+                    <a class="recipe-card" href="#pasta">
+                        <span class="card-image card-image-four"></span>
+                        <span>Garlic tomato pasta</span>
+                    </a>
                 </div>
             </div>
-        </nav>
-    </header>
-    <hr>
-    <main>
-        <h2>Explore Our Recipes</h2>
-        <p>Discover a variety of delicious recipes, from comforting classics to exciting new meals. Choose a recipe below to get started.</p>
-        <p>Happy cooking!</p>
+        </section>
+
+        <section class="quote" id="quote">
+            <div class="container quote-inner">
+                <blockquote>Good food brings people together. Whether you are cooking a quick weeknight meal or sharing a weekend feast, there is always room for one more recipe.</blockquote>
+                <cite>- The Odin Recipes kitchen</cite>
+            </div>
+        </section>
+
+        <section class="recipes container" aria-label="Recipe collection">
+            <article class="recipe" id="pancakes">
+                <h2>Fluffy Pancakes</h2>
+                <p>Fluffy pancakes are a comforting breakfast favorite with a soft, tender center and lightly golden edges.</p>
+                <h3>Ingredients</h3>
+                <ul><li>1 cup all-purpose flour</li><li>2 tablespoons sugar</li><li>1 teaspoon baking powder</li><li>3/4 cup milk</li><li>1 egg and 2 tablespoons melted butter</li></ul>
+                <h3>Instructions</h3>
+                <ol><li>Whisk the flour, sugar, and baking powder in a bowl.</li><li>Stir in the milk, egg, and melted butter until just combined.</li><li>Cook portions on a greased skillet until golden.</li><li>Serve warm with your favorite toppings.</li></ol>
+            </article>
+            <article class="recipe" id="dosa">
+                <h2>Sambhar Dosa</h2>
+                <p>Sambhar dosa combines a crisp, golden dosa with tangy, spicy sambhar and coconut chutney.</p>
+                <h3>Ingredients</h3>
+                <ul><li>1 cup rice</li><li>1/4 cup urad dal</li><li>1/4 teaspoon fenugreek seeds</li><li>Salt to taste</li><li>Water and oil as needed</li></ul>
+                <h3>Instructions</h3>
+                <ol><li>Soak the rice, urad dal, and fenugreek seeds for 4 to 6 hours.</li><li>Grind, combine, salt, and ferment the batter for 8 to 12 hours.</li><li>Spread the batter on a hot skillet and cook until crisp.</li><li>Serve with sambhar and coconut chutney.</li></ol>
+            </article>
+            <article class="recipe" id="lasagna">
+                <h2>Classic Lasagna</h2>
+                <p>A hearty baked dish made with layers of pasta, seasoned meat sauce, creamy ricotta, and melted cheese.</p>
+                <h3>Ingredients</h3>
+                <ul><li>Lasagna sheets</li><li>500 g ground beef</li><li>2 cups tomato sauce</li><li>1 cup ricotta and 2 cups mozzarella</li><li>1/2 cup grated Parmesan</li></ul>
+                <h3>Instructions</h3>
+                <ol><li>Brown the beef, add tomato sauce, and simmer for 15 minutes.</li><li>Layer sauce, pasta, ricotta, and mozzarella in a baking dish.</li><li>Finish with mozzarella and Parmesan.</li><li>Bake at 190°C (375°F) for 35 to 40 minutes.</li></ol>
+            </article>
+            <article class="recipe" id="pasta">
+                <h2>Garlic Tomato Pasta</h2>
+                <p>A quick Italian-inspired meal made with al dente pasta, bright tomato sauce, garlic, and fresh herbs.</p>
+                <h3>Ingredients</h3>
+                <ul><li>200 g pasta</li><li>2 tablespoons olive oil</li><li>3 minced garlic cloves</li><li>2 cups crushed tomatoes</li><li>Salt, pepper, and fresh basil</li></ul>
+                <h3>Instructions</h3>
+                <ol><li>Cook the pasta in salted water according to the package directions.</li><li>Sauté garlic in olive oil, then simmer with tomatoes.</li><li>Toss the pasta with the sauce and season to taste.</li><li>Garnish with basil and serve hot.</li></ol>
+            </article>
+        </section>
+
     </main>
-    <hr>
-    <footer>
-        <p>Follow us for more delicious recipes!</p>
-        <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">Instagram</a> |
-        <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">Facebook</a> |
-        <a href="https://www.twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">Twitter</a>
-    </footer>
-</body>
+
+    <footer>        <marquee behavior="scroll" direction="left" repeat="infinite" scrollamount="5">
+Copyright © The Odin Project 2026, By Jahnvi</marquee></footer>
+    </body>
 </html>
